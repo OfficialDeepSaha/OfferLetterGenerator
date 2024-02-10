@@ -12,19 +12,19 @@ import org.springframework.stereotype.Service;
 @Service
 public class OfferServiceImpl implements OfferService {
 
-	@Autowired
-	private OfferRepository offerRepository;
+//	@Autowired
+//	private OfferRepository offerRepository;
 	@Autowired
 	private JavaMailSender javaMailSender;
 	
 	private OfferLetter offerLetter;
 	
 	
-	@Override
-	public OfferLetter saveEnrollment(OfferLetter offerLetter) {
-		
-		return offerRepository.save(offerLetter);
-	}
+//	@Override
+//	public OfferLetter saveEnrollment(OfferLetter offerLetter) {
+//		
+//		return offerRepository.save(offerLetter);
+//	}
 
 	@Override
 	public void sendOfferLetter(String to , String name) throws Exception , UnsupportedEncodingException {

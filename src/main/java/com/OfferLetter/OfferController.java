@@ -36,7 +36,7 @@ public class OfferController {
 		savLetter.setName(offerLetter.getName());
 		savLetter.setEmail(offerLetter.getEmail());
 		//String email = request.getParameter("email");
-		offerService.saveEnrollment(offerLetter);
+//		offerService.saveEnrollment(offerLetter);
 		offerService.sendOfferLetter(offerLetter.getEmail() , offerLetter.getName());
 		System.out.print("Enrollment Successfully Registered!");
 	    return "redirect:/";
